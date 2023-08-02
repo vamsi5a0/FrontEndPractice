@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            p::first-letter{
+                color:rebeccapurple;
+                font-size: 80px;
+            }
+            /*entire first line red*/
+            p::first-line{
+                color:red
+            }
+            /*adds smile after  p tag */
+            p::after{
+                content: url(smiley.gif);
+                font-size: 2em;
+            }
+            ::marker{
+                color: red;
+            }
+            ::selection{
+                color: red;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is paragraph</p>
+        <ul>
+            <li>coffee</li>
+            <li>tea</li>
+            <li>biscuit</li>
+        </ul>
+       
+    </body>
+</html>
