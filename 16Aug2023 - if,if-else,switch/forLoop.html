@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <ul id="usersInfo">
+
+        </ul>
+    </head>
+    <body>
+        <script>
+            var users=["vamsi","chandu","bhanu"];
+            var usersInfo=document.getElementById("usersInfo");
+            var listItems="";
+            for(i=0;i<users.length;i++)
+            listItems=listItems+"<li>"+users[i]+"</li>";
+            console.log(listItems);
+            usersInfo.innerHTML=listItems;
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="emailormobile" size="40" placeholder="enter email or phone number">
+        <input type="text" id="password" placeholder="enter password">
+        <button onclick="login()">Submit</button>
+        <script>
+            function login(){
+                var emailormobile =document.getElementById("emailormobile").value;
+                var password=document.getElementById("password").value;
+                (emailormobile=="digi@gmail.com" || emailormobile==9876543210 ) && password=="digital"? alert("login success"):alert("login failure");
+                
+            }
+        </script>
+    </body>
+</html>

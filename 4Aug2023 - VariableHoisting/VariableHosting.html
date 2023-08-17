@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            console.log(a); // undefined, 100
+            var a = 100;
+            function f1() {
+                console.log(a); // undefined, 100,90
+                var a = 90;
+                console.log(a); // 90
+            }
+            f1();
+            console.log(a); // 100, 90
+            /*
+                  var a;
+                  console.log(a); // undefined
+                  a=100;
+                  function f1(){
+                      var a;
+                      console.log(a); //undefined
+                      a=90;
+                      console.log(a); // 90
+                  }
+                  f1();
+                  console.log(a); // 100
+            */
+           </script>
+    </body>
+</html>

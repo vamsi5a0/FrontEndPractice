@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var data=[100,200,true,false,true,"hello",[1,2,3]];
+            console.log(data);
+            data.pop(); //delete last index fromt the array data
+            console.log(data);
+            data.shift(); //shift delete the first element in the array index
+            console.log(data);
+            var index=data.indexOf(false); //it finds the index of false
+            data.splice(index,1); //it removes first false
+            data.unshift(100); //it adds 100 in to the array
+            console.log(data);
+            var index2=data.lastIndexOf(true); //it finds the last index of true
+            console.log(index2);
+            data.splice(index2,1); //it removes one true
+            console.log(data);
+            var index3=data.indexOf(100); //finds index of 100
+            data.splice(index3+2,0,150);
+            console.log(data);
+        </script>
+    </body>
+</html>

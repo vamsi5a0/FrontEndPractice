@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <ul id="usersInfo">
+
+        </ul>
+        <script>
+            // var i=o;
+            // while(i=0){
+            //     console.log(i);
+            //     i++;
+            // }
+            var users = ["kiran", "rajesh", "naveen", "venkat"];
+
+            var usersInfo = document.getElementById("usersInfo");
+
+            var index = 0;
+
+            var listItems = "";
+
+            while (index < users.length) {
+            listItems = listItems + "<li>" + users[index] + "</li>";
+            index++;
+            }
+            console.log(listItems);
+           usersInfo.innerHTML = listItems;
+        </script>
+    </body>
+</html>
