@@ -1,0 +1,41 @@
+
+</html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students=[
+        {
+                name: 'Karthik',
+                branch: 'CSE'
+            },
+            {
+                name: 'Satish',
+                branch: 'ECE'
+            },
+            {
+                name: 'Varun',
+                branch: 'EEE'
+            },
+        ]
+        const [students1,students2]=students;
+        console.log(students1);
+        console.log(students2);
+
+        const mobileNo=8919647129;
+        const mobileNoArr= mobileNo.toString().split('');
+        console.log(mobileNoArr);
+
+        const [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10]=mobileNoArr;
+        console.log(n1,n2);
+
+        const formattedMobile = `+91 ${n1}${n2}${n3} ${n4}${n5}${n6} ${n7}${n8}${n9}${n10}`;
+        console.log(formattedMobile);
+        const {name,branch}=students[0];
+        console.log(name,branch);
+    </script>
+</body>
+</html>

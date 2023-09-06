@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+       var user={
+        name:"kiran",
+        city:"hyd",
+        getDetails:function(a,b,c){
+            return this.name+"\t"+this.city+"\t"+a+"\t"+b+"\t"+c;
+        }
+       }     
+       //console.log(user.getDetails());
+       var user2={
+        name:"vamsi",
+        city:"chennai"
+
+       }
+       var arr=[10,20,30];
+       console.log(user.getDetails.call(user2,arr[0],arr[1],arr[2]));
+       console.log(user.getDetails.apply(user2,arr));
+       console.log(user.getDetails(10,20,30));
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        var user={
+            name:"vamsi",
+            city:"hyd",
+            getDetails:function(){
+                return this.name+"\t"+this.city
+            }
+
+        }     
+        //console.log(user.getDetails());
+        var user2={
+            name:"vamsi2",
+            city:"chennai"
+        }
+        console.log(user.getDetails());
+        console.log(user.getDetails.call(user2));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var bank={
+                bankName:"ICICI",
+                branch:"Madhapur"
+            }
+            var customer=Object.create(bank);
+            console.log(customer.bankName);
+            console.log(customer.branch);
+            customer.cid=101;
+            customer.name="kiran";
+            console.log(customer);
+        </script>
+    </body>
+</html>

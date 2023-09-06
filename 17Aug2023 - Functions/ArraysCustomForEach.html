@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var arr=[10,20,30,40,50];
+            function customforEach(x){
+                for(var i=0;i<arr.length;i++){
+                    x(arr[i]);
+                }
+            }
+            customforEach(function(value){
+                console.log(value);
+            })
+        </script>
+    </body>
+</html>

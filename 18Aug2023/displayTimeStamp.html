@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function getTimeStamp(){
+                var date=new Date();
+                var d=addZero(date.getDate())+"/"+addZero(date.getMonth()+1)+"/"+date.getFullYear();
+                var t = addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
+                return d+"   "+t;
+            }
+            function addZero(input){
+                if(input<10){
+                    input='0'+input;
+                }
+                return input;
+            }
+            console.log(getTimeStamp());
+        </script>
+</html>

@@ -1,0 +1,29 @@
+
+
+</html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var employeeName='vamsi';
+        var empId=101;
+        var empdesignation='software engineer';
+        const employee={
+            employeeName,
+            empId,
+            designation:empdesignation,
+            ['emp'+'_'+empId]:10000 //addng dynamic value
+            // ['emp'+'_'+'salary']:10000 
+            
+            //
+            //  getEmployeeId() {
+            //     return this.empId;
+            // }
+        };
+        console.log(employee.getEmployeeId());
+    </script>
+</body>
+</html>

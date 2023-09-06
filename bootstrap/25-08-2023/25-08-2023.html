@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <body>
+        <script>
+            const loginInfo={
+                "id":15,
+                "username":"kminchelle",
+                "email":"kminchelle@qq.com",
+                "firstName":"Jeanne",
+                "lastName":"Halvorson",
+                "gender":"feamle",
+                "token":"gdhdryggdhfgdfvsdtfutrsrwqazhjhkbktfc"
+            };
+            console.log(JSON.stringify(loginInfo));
+            const str=JSON.stringify(loginInfo);
+            console.log(str.slice(0,5));
+    
+            document.getElementById('userInfo').innerHTML=loginInfo;
+            localStorage.setItem('userInfo',JSON.stringify(loginInfo));
+        </script>
+    </body>
+    
+</html>

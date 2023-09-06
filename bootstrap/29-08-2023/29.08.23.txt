@@ -1,0 +1,53 @@
+Application cache: 
+
+A web application is cached and accessible without internet connection. Now we can offline web applications that will run without 
+internet connection by just creating a manifest in our application.
+
+
+Appcache file has three sections:
+CACHE MANIFEST: Files under this header will be cached after they are downloaded for the first time.
+NETWORK: Files under this header require a internet connection, will never be cached.
+FALLBACK: Files under this header specifies fallback pages if a page is inaccessible.
+
+*.appcache
+CACHE MANIFEST:
+/theme.css
+/logo.png
+/index.html
+
+NETWORK:
+login.js
+
+FALLBACK:
+/offline.html
+
+
+<html manifest="digital-lync.appcache">
+</html>
+
+Benefits of using application cache:
+
+Offline browsing: Users can use the appliction whenever they want to the app when they are offline.
+Speed: When app is already cached, it is easy to access data with the greater speed, since cached resources load faster than uncached resources.
+Reduced server load: Browser will download only resources which are updated.
+
+SVG: Scalar Vector Graphics:
+
+> Images won't break/blur when we change the screen size.
+
+<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+</svg>
+
+Canvas: Graphics
+
+> It allows as to draw graphics, create animations and build visual elements directly in a web page.
+
+Some common usecases:
+Data Visualization
+Interactive Games
+Drawing and Painting Apps
+Interactive Maps
+
+<canvas></canvas>

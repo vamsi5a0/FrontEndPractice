@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="abc"></div>
+        <script>
+            var input = document.createElement("input");
+            input.type = "text";
+            input.id = "otp";
+            input.placeholder = "enter otp here";
+            console.log(input);
+
+            var button = document.createElement("button");
+            button.innerText = "Submit";
+
+            var div = document.getElementById("abc");
+
+            div.appendChild(input);
+            div.appendChild(button);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+
+
+Task of Modal:
+
+https://www.google.com/search?q=modal+bootstrap&rlz=1C1PNBB_enIN1025IN1038&sxsrf=APwXEddp7FrcJ0YKbaKU_3wLaVG8Bsu6bQ:1682309074452&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiK2KPW0cH-AhUi4DgGHatcA3IQ_AUoAXoECAEQAw&biw=1280&bih=577&dpr=1.5#imgrc=XsQoV_-k1qtenM
+
+
+
+.portfolio_thumb {
+    visibility: visible;
+}
+.portfolio_hover {
+    visibility: hidden;
+}
+
+.single_Portfolio:hover .portfolio_hover {
+    visibility: visible;
+}
+
+.single_Portfolio:hover .portfolio_thumb {
+    visibility: hidden;
+}

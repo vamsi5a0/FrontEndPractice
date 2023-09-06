@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var employee = {
+            eid: 101,
+            name: "kiran",
+            getDetails: function () {
+                return this.eid + "\t" + this.name;
+            }
+        }
+
+        var emp2 = {
+            eid: 102,
+            name: "ram"
+        }
+        console.log(employee.getDetails());
+
+        console.log(employee.getDetails.call(emp2));
+        </script>
+    </body>
+</html>

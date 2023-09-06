@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <input type="text" id="username">
+
+    <p>This is a paragraph!</p>
+
+    <h1 class="x">This is a header</h1>
+
+    <button onclick="capture()">Capture</button>
+
+    <script>
+
+        function capture() {
+            console.log(document.getElementById("username").value);
+            var parray = document.getElementsByTagName("p");
+            console.log(parray);
+            parray[0].style.color = "red";
+            var h1array = document.getElementsByClassName("x");
+            h1array[0].style.backgroundColor = "red";
+        }
+
+
+    </script>
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+//Create a simple user management system using arrays.
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Add User Form</h1>
+        <input type="text" id="username" placeholder="username"> <br><br>
+        <input type="text" id="email" placeholder="email"> <br><br>        
+        <input type="text" id="mobile" placeholder="mobile"> <br><br>
+        <button onclick="addUser()">ADD USER</button>
+        <ul id="usersList" style="list-style: none"></ul>
+        <script>
+            var users=[];
+            function addUser(){
+                var username=document.getElementById("username").value;
+                var email=document.getElementById("email").value;
+                var mobile=document.getElementById("mobile").value;
+                var user={
+                    username:username,
+                    email:email,
+                    mobile:email
+                }
+                console.log(user);
+                users.push(user);
+                console.log(users);
+                showusers();
+            }
+            function showusers(){
+                var usersList=document.getElementById("usersList");
+                var listItems="";
+                users.forEach(function(user){
+                    listItems=listItems+"<li>"+user.username+"&nbsp;&nbsp;&nbsp"+user.email+"&nbsp;&nbsp"+user.mobile;
+
+                })
+                usersList.innerHTML=listItems;
+            }
+        </script>
+    </body>
+</html>

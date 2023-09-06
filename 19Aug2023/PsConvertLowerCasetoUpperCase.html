@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    
+    <body oncontextmenu="return false">
+        <input type="text" id="username" onkeyup="KeyupHandler()" placeholder="enter user name" oncopy="return false" onpaste="return false">
+        <script>
+            function KeyupHandler(){
+                var value=document.getElementById("username").value;
+                document.getElementById("username").value=value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

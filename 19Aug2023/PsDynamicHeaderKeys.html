@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table border="1" width=100%>
+            <thead id="thead"></thead>
+        </table>
+        <script>
+            var user = {
+            name: "Kiran",
+            department: "IT",
+            address: "hyderabad",
+            userId: 102,
+            division: "XYZ"
+        }
+
+        var keys = Object.keys(user);
+
+        console.log(keys);
+
+        var allTableHeaders = "";
+
+        keys.forEach(function (key) {
+
+            allTableHeaders = allTableHeaders + "<th>" + key + "</th>"
+
+        })
+
+        document.getElementById("thead").innerHTML = allTableHeaders;
+        </script>
+    </body>
+</html>

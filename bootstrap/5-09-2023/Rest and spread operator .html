@@ -1,0 +1,36 @@
+
+</html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function sumOfNums(...values){
+        console.log(values);
+        let sum=0;
+        values.forEach(value => {
+            sum+=value;
+        });
+            return sum;
+            //return value1+value2;
+       }
+       resultant=sumOfNums(10,20,30,40);
+       console.log(resultant);
+
+       //spread is used in arrays and objects
+       const arr=[45,67,22,98,100];
+       const arr2=[...arr,98,45,23];
+       console.log(arr2);
+
+       const userInfo={
+        name:'vamsi',
+        email:'vamsi@gmail.com'
+       }
+       const userInfo2={...userInfo,mobile:8919647129};
+       console.log(userInfo2);
+       
+    </script>
+</body>
+</html>

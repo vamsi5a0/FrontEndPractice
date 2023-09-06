@@ -1,0 +1,16 @@
+primary - blue
+success - green
+danger - red
+warning - yellow
+info - sky blue
+secondary - gray
+dark - black
+white - white
+
+    btn btn-* {primary | success | danger | warning info} 
+
+    text-*
+
+    bg bg-*
+
+    border border-*

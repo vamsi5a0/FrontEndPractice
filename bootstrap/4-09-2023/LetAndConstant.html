@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let isReactApp=true;
+        const organizationName='Digital Lync';
+        for(let i=0;i<5;i++){
+            console.log(i,'inside the loop')
+        } 
+        //console.log(i, 'Outside the for loop');
+
+        var employees=[
+            {
+            name: 'Charan',
+                id: 10001,
+                designation: 'Software Engineer',
+                joinedDate: '2023-02-04T04:15:03.788Z'
+            },
+            {
+                name: 'Bhargav',
+                id: 10002,
+                designation: 'Devops Engineer',
+                joinedDate: '2023-03-04T04:15:03.788Z'
+            },
+            {
+                name: 'Dinesh',
+                id: 10003,
+                designation: 'Lead Engineer',
+                joinedDate: '2023-02-01T04:15:03.788Z'
+            },
+            {
+                name: 'Yashwanth',
+                id: 10004,
+                designation: 'Software Engineer',
+                joinedDate: '2023-02-02T04:15:03.788Z'
+            }
+            ];
+        employees.forEach(function(emp,index){
+            console.log(emp.name,emp.id,emp.designation,index);
+        });
+
+        //map
+        const formattedEmployees=employees.map(function(emp){
+            const dateObj=new Date(emp.joinedDate);
+            const _formattedDate=dateObj.getDate()+'/'+(dateObj.getMonth()+1)+'/'+dateObj.getFullYear();
+           // const formattedDate = `${dateObj.getDate()}/${dateObj.getMonth() + 1}/${dateObj.getFullYear()}`; // Template Literals
+            return {...emp,joinedDate:_formattedDate};
+        });
+        console.log(formattedEmployees);
+
+        //filter
+        const filteredEmps=employees.filter(function(emp){
+            return emp.designation==="Software Engineer";
+        });
+        console.log(filteredEmps);
+        
+        //find
+        const _10002Employee=employees.find(function(emp){
+            return emp.id===10002;
+        });
+        console.log(_10002Employee);
+
+        //every
+        // const isEveryEmpIsSoftwareEngineer=employees.every(function(){
+        //         return emp.designation==="Software Engineer";
+        // });
+        // console.log(isEveryEmpIsSoftwareEngineer);
+
+        //some
+        const students=[
+        {
+                name: 'Karthik',
+                branch: 'CSE'
+            },
+            {
+                name: 'Satish',
+                branch: 'ECE'
+            },
+            {
+                name: 'Varun',
+                branch: 'EEE'
+            },
+        ]
+        const eligibleBranches=['CSE','ECE'];
+
+        const filteredStudents = students.filter(function(std) {
+            return eligibleBranches.some(function(branch) {
+                return branch === std.branch;
+            })
+        });
+        const isEligible = eligibleBranches.some(function(branch) {
+                return branch === students[1].branch;
+        })
+
+        console.log(isEligible);
+        console.log(filteredStudents);
+    </script>   
+</body>
+</html>

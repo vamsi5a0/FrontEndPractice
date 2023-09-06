@@ -1,0 +1,22 @@
+
+</html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const arr=[45,67,22,98,100];
+       function sortNums(arr=[] ,order='asc'){
+        if(order==='asc'){
+            return arr.sort();
+        }else{
+            return arr.sort().reverse();
+        }
+       }
+       let resultant=sortNums(arr,'desc');
+       console.log(resultant);
+    </script>
+</body>
+</html>

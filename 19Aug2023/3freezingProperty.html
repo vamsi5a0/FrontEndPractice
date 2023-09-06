@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var bank=Object.freeze({
+                bankName: "ICICI",
+                branch: "Madhapur",
+                ifscCode: "ICICI9089999",
+                manager: "Amil"
+            });
+            bank.bankName="HDFC";
+            bank.abc=123;
+            bank.branch="hyderabad";
+            console.log(bank);
+        </script>
+    </body>
+</html>

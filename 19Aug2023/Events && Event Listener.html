@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button>Greetings</button>
+    <script>
+        function btnHandler() {
+            alert("Happy Weekend!");
+        }
+        var btnArray = document.getElementsByTagName("button");
+        btnArray[0].addEventListener('click', btnHandler);
+        btnArray[0].addEventListener('mouseover', function () {
+            btnArray[0].style.backgroundColor = "red";
+        });
+        btnArray[0].addEventListener('mouseout', function () {
+            btnArray[0].style.backgroundColor = "";
+        });
+    </script>
+</body>
+
+</html>
