@@ -1,0 +1,36 @@
+HTML is a Markup language that is used to design web pages and JavaScript is a programming language that enables dynamic interactivity
+on websites when it is applied to an HTML. It helps the users to build modern web applications. But the problem with this JavaScript
+was designed to run in a single-threaded environment, so multiple scripts cannot run at the same time and also when executing 
+Javascript scripts on an HTML page, the page becomes unresponsive until the script is finished. So, To overcome this Web worker comes 
+into the picture. The Web Workers is a separate piece of JavaScript code that runs in the background of the web page without affecting it.
+
+What is Web Worker?
+
+Web workers are multithreaded object which is used to execute Javascripts in the background without affecting the performance of the 
+application or webpage. Web Workers allow for long-running scripts that are not interrupted by scripts that respond to clicks or other 
+user interactions and allow long tasks to be executed without affecting the responsiveness of the web page. Generally, it is used for 
+big CPU intensive tasks.
+
+Session timeout
+
+main.js
+// Creates instance of worker file.
+const worker new Worker(relativePath);
+
+// listens messages posted by worker
+worker.onmessage = function(event) {
+
+}
+
+web-worker.js
+
+// Post message from worker to main javascript file
+self.postMessage(value);
+
+Geo Location: It returns the current device location latitude and longitude value using internet.
+
+Navigator.geolocation.getCurrentLocation(function(response) {
+
+}, function(error) {
+    
+})

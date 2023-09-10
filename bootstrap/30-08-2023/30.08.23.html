@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h2>Session Time:<span id="sessionTime"></span></h2>
+    </div>
+    <script>
+
+        // const worker = new Worker('./web-worker.js');
+
+        // worker.onmessage = function(event) {
+        //     console.log(event.data);
+
+        //     if (event.data === 'Your session has been completed') {
+        //         document.getElementById('sessionTime').innerHTML = '00:00';
+        //         window.alert(event.data);
+        //     } else {
+        //         document.getElementById('sessionTime').innerHTML = event.data;
+        //     }
+        // }
+
+        navigator.geolocation.getCurrentPosition(function(location) {
+            
+
+            const xhttp = new XMLHttpRequest();
+            const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${location.coords.latitude}&longitude=${location.coords.longitude}&localityLanguage=en`;
+            xhttp.open('GET', url);
+            xhttp.onreadystatechange = function() {
+                if (xhttp.readyState === 4) {
+                    const locationArray = JSON.parse(xhttp.responseText).localityInfo.administrative.reverse();
+                    let locationStr = '';
+                    locationArray.forEach((location, index) => {
+                        if ( (index + 1) !== locationArray.length) {
+                            locationStr += location.name + ', ';
+                        } else {
+                            locationStr += location.name;
+                        }
+                    });
+
+                    console.log(locationStr);
+                }
+            }
+            xhttp.send();
+        }, function(error) {
+            console.log(error);
+        });
+
+
+    </script>
+</body>
+</html>

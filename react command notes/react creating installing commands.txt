@@ -1,0 +1,118 @@
+Microsoft Windows [Version 10.0.19045.3324]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user>node -v
+v18.17.1
+
+C:\Users\user>npm install -g create-react-app
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+
+added 67 packages in 5s
+
+5 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New major version of npm available! 9.6.7 -> 10.0.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.0.0
+npm notice Run npm install -g npm@10.0.0 to update!
+npm notice
+
+C:\Users\user>
+
+
+//changing directry to particular file and creating proeject
+
+Microsoft Windows [Version 10.0.19045.3324]
+(c) Microsoft Corporation. All rights reserved.
+
+F:\FrontEndPractice\react>npx create-react-app ecommerce-app
+
+Creating a new React app in F:\FrontEndPractice\react\ecommerce-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1453 packages in 2m
+
+241 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+
+added 69 packages, and changed 1 package in 9s
+
+245 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1522 packages in 4s
+
+245 packages are looking for funding
+  run `npm fund` for details
+
+6 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created ecommerce-app at F:\FrontEndPractice\react\ecommerce-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd ecommerce-app
+  npm start
+
+Happy hacking!
+
+F:\FrontEndPractice\react>cd ecommerce-app
+
+F:\FrontEndPractice\react\ecommerce-app>npm start
+
+> ecommerce-app@0.1.0 start
+> react-scripts start
+
+(node:24536) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:24536) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+Compiled successfully!
+
+You can now view ecommerce-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.108:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully

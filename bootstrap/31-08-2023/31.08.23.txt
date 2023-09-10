@@ -1,0 +1,39 @@
+
+To retrieve latitude and longitude of a location:
+https://www.google.com/maps/place/Sowbhagya's+Amulya+Complex/@17.4505555,78.3823434,21z/data=!4m6!3m5!1s0x3bcb93df3171eedb:0x45e474543c0b66b0!8m2!3d17.4506144!4d78.3823082!16s%2Fg%2F11cs5ty0r5?hl=en-US&entry=ttu
+
+function initMap() {
+    const center = new google.maps.LatLong(latitude, longitude);
+
+    const map = new google.maps.Map(divRef, {
+        center: center,
+        zoom: 12
+    });
+
+    const marker = new google.maps.Marker({
+        position: center
+    });
+
+    marker.setMap(map);
+}
+
+
+https://maps.googleapis.com/maps/api/js?key=AIzaSyCkIbnXkth0pXaXfAtl2rM2c67V398bk_g&callback=initMap
+
+CSS3:
+
+Shadow:
+
+box-shadow: h-offset v-offset blur spread color;
+
+border-image
+
+background-image: url(), url()
+background-position: center, center;
+background-repeat: no-repeat, no-repeat;
+background-size: 0px, 10px;
+background-attachment: fixed, scroll
+
+box-sizing: border-box | content-box(default)
+
+If we use border-box padding will not be considered as thw width and height;

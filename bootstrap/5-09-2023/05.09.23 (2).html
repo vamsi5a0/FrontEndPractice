@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+            {
+                name: 'Karthik',
+                branch: 'CSE'
+            },
+            {
+                name: 'Satish',
+                branch: 'ECE'
+            },
+            {
+                name: 'Varun',
+                branch: 'EEE'
+            },
+        ]
+            
+        const eligibleBranches = ['CSE', 'ECE'];
+
+        // const isEligible = eligibleBranches.some(function(branch) {
+        //     return branch === students[2].branch;
+        // });
+
+        const isEligible = eligibleBranches.some((branch) => branch === students[2].branch);
+
+        var employeeName = 'Karthik';
+
+        var empId = 90109;
+
+        var empDesignation = 'Software Engineer';
+
+        const employee = {
+            employeeName,
+            empId,
+            designation: empDesignation,
+            ['emp' + '_' + empId]: 10000,
+            getEmployeeId: () => this.empId,
+            // getEmployeeId() {
+            //     return this.empId;
+            // }
+        };
+
+        console.log(employee.getEmployeeId());
+
+       const arr = [49, 12, 56, 78, 34];
+
+       function sortNums(arr = [], order = 'asc') {
+            if (order === 'asc') {
+                return arr.sort();
+            } else {
+                return arr.sort().reverse();
+            }
+       }
+
+       let resultant = sortNums(arr, 'desc');
+
+       console.log(resultant);
+
+       function sumOfNums(...values) {
+            console.log(values);
+            let sum = 0;
+            values.forEach(value => {
+                sum += value;
+            })
+            return sum;
+            // return value1 + value2;
+       }
+
+       resultant = sumOfNums(23, 12, 90, 67);
+
+       resultant = sumOfNums(23, 12);
+
+
+       console.log(resultant);
+
+       const arr2 = [...arr, 98, 45, 43];
+
+       console.log(arr2);
+
+       const userInfo = {
+            name: 'Naveen Kumar',
+            email: 'naveen.kumar@gmail.com'
+       };
+       
+       const userInfo2 = {...userInfo, mobile: 903212356};
+
+       console.log(userInfo2);
+
+       const [student1, student2] = students;
+
+       console.log(student1);
+
+       console.log(student2);
+
+       const mobileNo = 9032345245;
+
+       const mobileNoArr = mobileNo.toString().split('');
+
+       console.log(mobileNoArr);
+
+       const [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10] = mobileNoArr;
+
+       const formattedMobileNo = `+91 ${n1}${n2}${n3} ${n4}${n5}${n6} ${n7}${n8}${n9}${n10}`;
+
+       console.log(formattedMobileNo);
+
+       const {name, branch} = students[0];
+
+       console.log(name, branch);
+
+    </script>
+</body>
+</html>
