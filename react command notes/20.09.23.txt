@@ -1,0 +1,24 @@
+How can we share data between components?
+
+> Passing information using routing.
+
+    https://domain.com/routeName/routeParam1/routeParam2/routeParam3?queryParam1=value1&queryParam2=value2&queryParam3=value....
+
+Route Parameters
+Query Parameters
+
+<Route path="/routeName/:routeParamName/:routeParamName"></Route>
+
+Source Component:
+<Link to=`routeName/${routeParamName}`></Link>
+
+Destination Component:
+
+import { useParams, useSearchParams } from 'react-router-dom';
+
+const params = useParams(); // It retrieves all the route parameters which are available under current route.
+
+
+const [searchParams, setSearchParams] = useSearchParams();
+
+    searchParams.get(parameterName);

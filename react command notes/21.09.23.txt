@@ -1,0 +1,28 @@
+Nested Routes: Defining multiple routes under one route is called nested routing.
+
+Nested routes enables you to have multiple components render on the same page with route parity
+
+App.js
+
+
+    <Routes>
+        <Route path="/routeName" element={<ComponentName/>}>
+            <Route path="childRouteName" element={<ComponentName/>}>
+            <Route path="childRouteName" element={<ComponentName/>}>
+            <Route path="childRouteName" element={<ComponentName/>}>
+        </Route>
+            <Route path="*" element={<ComponentName/>}>
+    </Routes>
+
+Component.js
+import { Outlet } from 'react-router-dom';
+
+
+
+    <Outlet/> - In place of this the component which is requested will be loaded.
+
+    /routeName/childRouteName
+
+Product Details
+
+    

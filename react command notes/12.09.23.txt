@@ -1,0 +1,56 @@
+Src - Source
+App.css - css source code of App component.
+App.js - Component - HTML & JS - JSX
+
+Component - Custom Tag - UI using HTML,CSS & JS
+
+index.js 
+
+    render & createRoot functions is used link div present in index.html and App component.
+
+Component: 
+Components are independent and reusable bits of code
+They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+We have two types of components.
+
+Class Component
+Functional Component
+
+Functional Component:
+
+    function ComponentName() {
+        
+        return (
+            <div>
+                {variableName}
+            </div>
+        )
+    }
+
+    export default ComponentName;
+
+    import ComponentName from 'relativePath';
+
+(
+    - To write html source code
+)
+
+{
+    - to write javascript source code.
+}
+
+Use component as tag:
+
+    <ComponentName/>
+
+- In place of ComponentName it returns the output of html source code by combining css and js.
+
+For configuring bootstrap
+
+npm install bootstrap
+
+npm install jquery
+
+import 'node_modules/bootstrap/dist/js/bootstrap.min.js';
+
+import 'node_modules/bootstrap/dist/css/bootstrap.min.css';

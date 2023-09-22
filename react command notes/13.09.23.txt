@@ -1,0 +1,10 @@
+Map method:
+
+Using map we can iterate through an array to display the html elements for multiple no of times.
+
+    Syntax:
+
+        arrayName.map((item, index) => (
+            <div>
+            </div>
+        ));

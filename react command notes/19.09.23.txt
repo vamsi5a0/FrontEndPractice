@@ -1,0 +1,56 @@
+Routing: Routing is the process of redirecting a user to different pages based on their action or request.
+
+In react we are going to use external library called react router to configure navigation.
+
+For configurating react router library:
+
+npm install react-router-dom
+
+index.js
+import { BrowserRouter } from 'react-router-dom';
+
+BrowserRouter keep tracks of all the user navigations either it might be forward/backward navigation.
+> Internally browser router uses HTML5 browser api to keep the routing information.
+
+    return (
+        <React.StrictMode>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </React.StrictMode>
+    )
+
+App.js
+
+import { Routes, Route } from 'react-router-dom';
+
+
+    return (
+        <Routes>
+            <Route path="/routeName" element={<tagName/>}></Route>
+            <Route path="/routeName" element={<tagName/>}></Route>
+            <Route path="/routeName" element={<tagName/>}></Route>
+            <Route path="/routeName" element={<tagName/>}></Route>
+        </Routes>
+    )
+
+Link: A <Link> is an element that lets the user navigate to another page by clicking or tapping on it.
+
+Syntax:
+
+import { Link } from 'react-router-dom';
+
+    <Link to="/routeName"></Link>
+
+useNavigate: The useNavigate hook returns a function that lets you navigate programmatically
+
+import { useNavigate } from 'react-router-dom';
+
+const navigate = useNavigate();
+
+navigate('/routeName');
+
+Sharing data between two different components.
+
+Route Parameters
+Query Parameters
